@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>loginServlet</servlet-name>
+        <servlet-class>ExoticaTravels.loginServlet</servlet-class>
+        <init-param>
+            <param-name>Author</param-name>
+            <param-value>Ibrahim Yusuf ,O</param-value>
+        </init-param>
+    </servlet>
+    <servlet>
+        <servlet-name>bookingServlet</servlet-name>
+        <servlet-class>ExoticaTravels.bookingServlet</servlet-class>
+        <init-param>
+            <param-name>Author</param-name>
+            <param-value>Ibrahim Yusuf O</param-value>
+        </init-param>
+    </servlet>
+    <servlet>
+        <servlet-name>welcomeServlet</servlet-name>
+        <servlet-class>ExoticaTravels.welcomeServlet</servlet-class>
+        <init-param>
+            <param-name>Author</param-name>
+            <param-value>Ibrahim Yusuf .O</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>loginServlet</servlet-name>
+        <url-pattern>/loginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>bookingServlet</servlet-name>
+        <url-pattern>/bookingServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>welcomeServlet</servlet-name>
+        <url-pattern>/welcomeServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
